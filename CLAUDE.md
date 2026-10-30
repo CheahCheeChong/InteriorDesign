@@ -34,9 +34,14 @@ produced them. Everything here is intentionally public.
      (~4–5 min per view).
 2. Commit the render to `renders/` here and use its raw URL:
    `https://raw.githubusercontent.com/CheahCheeChong/InteriorDesign/main/renders/<file>.jpg`
-3. Recraft `image_to_image` with that URL, `realistic_image` style,
-   strength ~0.35–0.5 so walls, windows, doors and furniture positions stay put.
-4. Save results to `photoreal/`.
+3. Recraft `image_edit` (default model nano_banana_2, ~11 credits per image)
+   with that URL and a prompt that says "keep the exact same camera angle,
+   layout and every piece of furniture; do not add, remove or move anything;
+   only upgrade materials and lighting", then list the room's materials.
+   - Do NOT use `image_to_image` for this: even at strength 0.45 it rearranges
+     the room (moved the sofa, invented a kitchen).
+   - nano_banana_pro is not on the user's plan.
+4. Record the result links in `photoreal/README.md`.
 
 Notes: direct uploads to mcp.recraft.ai and GitHub gists are blocked from
 Claude's sandbox; this repo is the workaround.
