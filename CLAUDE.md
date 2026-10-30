@@ -55,3 +55,20 @@ Claude's sandbox; this repo is the workaround.
 | 03 Kitchen | (232, 178, 62) | (170, 30, 40) | 84° |
 | 04 Master bedroom | (70, 505, 58) | (186, 478, 44) | 88° |
 | 05 Overview (no ceiling) | (170, -330, 640) | (170, 290, 0) | 52° |
+
+## Keeping room size and walls (lesson from kitchen + master bedroom)
+
+nano_banana_2 tends to zoom out, enlarge small rooms and drop walls that fill
+part of the frame. The user confirmed the model sizes are correct, so prompts
+must forbid this explicitly, e.g.:
+
+"Photorealistic retouch of this exact image. This is a SMALL, compact room:
+keep the identical framing, crop, camera position, lens and perspective. Do
+NOT zoom out, widen the view, make the room bigger or add floor space. Keep
+the plain wall that fills the right side of the frame. Every object keeps its
+exact position, size and outline: <list objects by frame position>. Only
+replace materials and lighting with realistic ones: <materials>."
+
+- gemini_25_flash_image (5 credits) keeps the layout but adds little realism.
+- Kitchen render 03 has a wall filling the right half; consider re-rendering
+  from a clearer angle rather than relying on the prompt.
