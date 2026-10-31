@@ -10,7 +10,10 @@ produced them. Everything here is intentionally public.
   kitchen and yard removed. Bedroom 3 is L-shaped (wraps above the common
   bath) with its door on the hallway wall beside Bedroom 2's. Main entrance
   door sits on the dining/corridor wall, in line with the kitchen glass door.
-- Source model: SketchUp file `My_House_Warm_Style_v2.skp` (built via the
+- Kitchen windows are on the old yard wall (west wall, x=100, y 12-108,
+  z 40-88), NOT on the south wall above the sink. The south wall is solid
+  with a full run of cream upper cabinets over the sink.
+- Source model: SketchUp file `My_House_Warm_Style_v3.skp` (built via the
   Trimble SketchUp connector). Units in the scripts are inches.
 - Palette: warm oak + walnut, oatmeal boucle, linen, rattan, brushed brass,
   terracotta/rust and olive accents, warm-white walls, terrazzo kitchen floor.
@@ -21,6 +24,8 @@ produced them. Everything here is intentionally public.
 - `photoreal/` – Recraft image-to-image results made from `renders/`.
 - `scripts/build_house_render.py` – self-contained Blender script: rebuilds
   the model, materials, lights, cameras, and renders every view.
+  NOTE: it predates v3 and still has the old south-wall kitchen windows;
+  re-export the geometry from v3 before re-rendering the kitchen.
 
 ## Workflow for "make a realistic image of room X"
 
