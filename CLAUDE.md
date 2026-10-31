@@ -77,3 +77,17 @@ replace materials and lighting with realistic ones: <materials>."
 - gemini_25_flash_image (5 credits) keeps the layout but adds little realism.
 - Kitchen render 03 has a wall filling the right half; consider re-rendering
   from a clearer angle rather than relying on the prompt.
+
+## SketchUp connector save budget (30 saves per account; 5 used by v3)
+
+Only `save_model` costs a save; `build_model` calls and rebuilding after a
+session timeout are free. Rules:
+1. Batch every requested change into one round, then save once.
+2. Before saving, verify with a free preview: export geometry via
+   `build_model` and draw a top-down plan / quick view here, show the user,
+   and save only after they confirm.
+3. Save only when the user needs the .skp (to open it or render from it).
+4. Sessions expire after ~30 min idle; rebuild from the build steps (free),
+   then save once at the end.
+5. For heavy iteration, offer a Ruby Console script for the user's own
+   licensed desktop SketchUp (no save limit).
