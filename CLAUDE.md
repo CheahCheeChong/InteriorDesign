@@ -13,7 +13,12 @@ produced them. Everything here is intentionally public.
 - Kitchen windows are on the old yard wall (west wall, x=100, y 12-108,
   z 40-88), NOT on the south wall above the sink. The south wall is solid
   with a full run of cream upper cabinets over the sink.
-- Source model: SketchUp file `My_House_Warm_Style_v3.skp` (built via the
+- Corner unit, extra exterior windows: Bedroom 3 south wall (y=120, x 20-80),
+  Bedroom 2 wall facing the AC ledge (y=348, x 14-50), master bedroom west
+  wall (x=62, y 460-525). Common bath window is on its kitchen-facing wall
+  (y=120, x 110-142, high louvre), not on the hallway wall. No aircond unit
+  above the Bedroom 2 door.
+- Source model: SketchUp file `D1220.skp` (built via the
   Trimble SketchUp connector). Units in the scripts are inches.
 - Palette: warm oak + walnut, oatmeal boucle, linen, rattan, brushed brass,
   terracotta/rust and olive accents, warm-white walls, terrazzo kitchen floor.
@@ -78,7 +83,7 @@ replace materials and lighting with realistic ones: <materials>."
 - Kitchen render 03 has a wall filling the right half; consider re-rendering
   from a clearer angle rather than relying on the prompt.
 
-## SketchUp connector save budget (30 saves per account; 5 used by v3)
+## SketchUp connector save budget (30 saves per account; 6 used as of D1220)
 
 Only `save_model` costs a save; `build_model` calls and rebuilding after a
 session timeout are free. Rules:
