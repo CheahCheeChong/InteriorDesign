@@ -96,3 +96,13 @@ session timeout are free. Rules:
    then save once at the end.
 5. For heavy iteration, offer a Ruby Console script for the user's own
    licensed desktop SketchUp (no save limit).
+
+## File version compatibility
+
+The SketchUp connector always saves in SketchUp 2026 format (header {26.1.0});
+the user's desktop SketchUp is 2022 and cannot open those files. For a file
+the user can open, export the model tree from the connector session and use
+`scripts/D1220.rb`: open a new model in the user's SketchUp, then in
+Window > Ruby Console run
+`load "/Users/cheahcheechong/Desktop/House_Render/D1220.rb"`
+and File > Save As. This costs no connector saves.
