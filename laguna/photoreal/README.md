@@ -11,3 +11,9 @@ Files here are the low-res previews; full-resolution originals are on Recraft.
 
 Notes: wine-area result added a second plant on the right; living-room result
 turned the left wall pillar edge into a window frame. Layout otherwise kept.
+
+## 4096 x 2632 upscales (Recraft crisp_upscale, 1 credit each)
+
+- Living room: https://img.recraft.ai/ozwqCYdjac7ZBeHrAwJA2zGWMgRdaHpO2myg7rWkZWs/raw:1/plain/abs://prod/images/a73713fd-6339-4c03-a85e-107f11f0eb43
+- Wine area (still has the extra right-side plant): https://img.recraft.ai/XaLWFl1MtXS-NrN8PPWBAOn_GZpRw8-xHL3XRK9YUH4/raw:1/plain/abs://prod/images/a6c14136-bc57-498b-983d-3ad114fb04bc
+- Dry kitchen + dining (final Gemini version: no back-wall cabinet, recessed downlights): https://img.recraft.ai/bHe_10US1krYe4zbgSl7KwbLu5wq5m2bzzGhuF8axX4/raw:1/plain/abs://prod/images/2f93d5b2-8cc0-43c4-b4c5-59d405e7ab3b
