@@ -106,3 +106,12 @@ the user can open, export the model tree from the connector session and use
 Window > Ruby Console run
 `load "/Users/cheahcheechong/Desktop/House_Render/D1220.rb"`
 and File > Save As. This costs no connector saves.
+
+## Family share page (GitHub Pages)
+
+`index.html` at the repo root is the Laguna house 3D viewer, served by GitHub
+Pages at https://cheahcheechong.github.io/interiordesign/ for the family.
+Update it ONLY when the user says a version is ready ("update the git repo"):
+copy `/home/claude/laguna3d/index.html` (built by the Laguna build chain, see
+`~/Desktop/House_Render/LAGUNA_PROJECT_NOTES.md`) over it and push. Do not
+push it after every design round.
